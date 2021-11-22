@@ -159,9 +159,9 @@ const ShoppingCart = () => {
                             <Info>
                                 <Product>
                                     <ProductDetail>
-                                        <Image src="Slider Images/rukia.png"/>
+                                        <Image src="Slider Images/solar.jpg"/>
                                         <Detail>
-                                            <ProductName> <b>Product: </b> Rukia Bleach Bankai</ProductName>
+                                            <ProductName> <b>Product: </b> Super Solar</ProductName>
                                             <ProductSize> <b>Size: </b> 34</ProductSize>
                                             <ProductColor color="000" />
                                         </Detail>
@@ -178,9 +178,9 @@ const ShoppingCart = () => {
                                 <Hr/>
                                 <Product>
                                     <ProductDetail>
-                                        <Image src="Slider Images/unohana.png"/>
+                                        <Image src="Slider Images/gps.jpg"/>
                                         <Detail>
-                                            <ProductName> <b>Product: </b> Unohana Bleach Bankai</ProductName>
+                                            <ProductName> <b>Product: </b> Modern GPS</ProductName>
                                             <ProductSize> <b>Size: </b> 34</ProductSize>
                                             <ProductColor color="000" />
                                         </Detail>
@@ -197,9 +197,9 @@ const ShoppingCart = () => {
                                 <Hr/>
                                 <Product>
                                     <ProductDetail>
-                                        <Image src="Slider Images/kenpachi.png"/>
+                                        <Image src="Slider Images/samsung.png"/>
                                         <Detail>
-                                            <ProductName> <b>Product: </b> Unohana Bleach Bankai</ProductName>
+                                            <ProductName> <b>Product: </b> Samsung S10</ProductName>
                                             <ProductSize> <b>Size: </b> 34</ProductSize>
                                             <ProductColor color="000" />
                                         </Detail>

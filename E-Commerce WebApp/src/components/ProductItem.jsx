@@ -26,22 +26,26 @@ const Info = styled.div`
 `;
 
 const Container = styled.div`
-    ${mobile({flex:"1"})}
-    margin: 5px;
+    ${mobile({marginTop:"50px", width:"100%", height:"100%", boxShadow: "none"})}
+    margin: 20px;
+    flex-direction: column;
     width: 280px;
     height: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    flex-direction: column;
+    -webkit-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.3);
     &:hover ${Info} {
          opacity: 1;
     }
 `;
-// Object-fit helps keep images in same size and crop so they dont look worn out
+// Object-fit:cover helps keep images in same size and crop so they dont look worn out
 const Image = styled.img`
-    height: 75%;
+    height: 63%;
+    width: 80%;
+    
 `;
 const Icon = styled.div`
     width: 40px;

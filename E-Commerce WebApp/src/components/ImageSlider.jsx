@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from 'react'
+import React,{useState, useEffect, useRef} from 'react'
 import { Link } from 'react-router-dom';
 import styled from 'styled-components'
 import {SilderItems} from '../data';
@@ -44,7 +44,7 @@ const ImageContainer = styled.div`
 `;
 const Image = styled.img`
     height: 80%;
-    ${mobile({height:"60%"})}
+    ${mobile({height:"60%", marginLeft:"40px", marginTop:"10px"})}
 `; 
 
 const InfoContainer = styled.div`
@@ -72,9 +72,17 @@ const InfoButton = styled.button`
 
 const ImageSlider = () => {
 const [Index, setIndex]  = useState(0);
+const timeoutRef = useRef(null);
+
+function resetTimeout() {
+        if (timeoutRef.current) {
+                  clearTimeout(timeoutRef.current);
+            }  
+        }
 
 useEffect(() => {
-        setTimeout(()=>setIndex(
+    resetTimeout();
+        timeoutRef.current = setTimeout(()=>setIndex(
             (prevIndex) =>
               prevIndex===colors.length - 1 ? 0 : prevIndex + 1 
               ),delay);
@@ -102,7 +110,7 @@ useEffect(() => {
             </SlideShowSlide>
             <SlideDotsContainer>
                 {colors.map((_, idx) => (
-                    <SlideDots active={`${Index === idx ? "blue" : "gray"}`} key={idx}/>
+                    <SlideDots onClick={() => setIndex(idx)} active={`${Index === idx ? "blue" : "gray"}`} key={idx}/>
                 ))}
             </SlideDotsContainer>
         </SlideShow>
