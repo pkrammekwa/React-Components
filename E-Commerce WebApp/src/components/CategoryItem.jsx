@@ -35,16 +35,18 @@ const Info = styled.div`
 const Title = styled.h1`
     color: white;
     margin-bottom: 20px;
-
+    background: rgba(0,0,0,0.5);
+    padding: 10px;
 `;
 const Button = styled.a`
-    background: none;
-    border: 1px solid white;
+    background: rgba(0,0,0,0.5);;
+
     border-radius: 10%;
     color: white;
     padding: 10px;
     cursor: pointer;
     font-weight: bold;
+    text-decoration: none;
 
     &:hover{
         background-color: white;

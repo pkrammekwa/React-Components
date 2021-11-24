@@ -41,33 +41,37 @@ const SlideDots = styled.div`
 const ImageContainer = styled.div`
     height: 100%;
     display: flex;
+    ${mobile({flexDirection:"column"})};
 `;
 const Image = styled.img`
     height: 80%;
-    ${mobile({height:"60%", marginLeft:"40px", marginTop:"10px"})}
+    ${mobile({height:"60%", width:"70%", marginLeft:"40px", marginTop:"10px"})}
 `; 
 
 const InfoContainer = styled.div`
     padding: 50px;
-    ${mobile({ display: "none"})}
+    ${mobile({ padding:"5px"})}
 
 `;
 const Title = styled.h2`
     font-size: 50px;
+    ${mobile({ fontSize:"25px", textAlign:"center"})}
+
 `;
 const Description = styled.p`
     margin: 50px 0px;
     font-size: 25px;
     font-style: italic;
     font-weight: 100;
+    ${mobile({ margin:"0px 0px", display:"none"})}
 `;
 const InfoButton = styled.button`
     background: transparent;
     border: 1px solid #ddd;
-    border-radius: 50%;
     font-size: 20px;
     padding: 10px;
     cursor: pointer;
+    ${mobile({ display:"none"})}
 `;
 
 const ImageSlider = () => {
@@ -99,10 +103,10 @@ useEffect(() => {
                         <ImageContainer>
                             <Image src={item.img} />
                             <InfoContainer >
-                            <Title>{item.title}</Title>
-                            <Description>{item.desc}</Description>
-                            <InfoButton><Link to="Shop" style={{textDecoration:"none", color:"black"}}>Shop Now</Link></InfoButton>
-                        </InfoContainer>
+                                <Title>{item.title}</Title>
+                                <Description>{item.desc}</Description>
+                                <InfoButton><Link to="Shop" style={{textDecoration:"none", color:"black"}}>Shop Now</Link></InfoButton>
+                            </InfoContainer>
                         </ImageContainer>
                          
                     </Slide>

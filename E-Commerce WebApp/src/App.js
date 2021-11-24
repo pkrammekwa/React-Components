@@ -8,6 +8,9 @@ import Login from './pages/Account/Login';
 import ShoppingCart from './pages/Cart/ShoppingCart';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Wishlist from './pages/Cart/Wishlist';
+import Profile from './pages/Account/Profile';
+import AddProduct from './pages/Products/AddProduct';
+import EditProduct from './pages/Products/EditProduct';
 
 function App() {
   return (
@@ -35,6 +38,15 @@ function App() {
           <Route path="/MyWishlist">
               <Wishlist/>
           </Route> 
+          <Route path="/MyProfile">
+              <Profile/>
+          </Route> 
+          <Route path="/Product/AddProduct">
+              <AddProduct/>
+          </Route> 
+          <Route path="/Product/EditProduct">
+              <EditProduct/>
+          </Route>
         </Switch>
       </Router>
         

@@ -113,6 +113,7 @@ const Navbar = () => {
              </Center>
              <Right >
                      
+                 <MenuItem><Link to="MyProfile" style={{textDecoration:"none", color:"black"}}>My Profile</Link></MenuItem>
                  <MenuItem><Link to="Login" style={{textDecoration:"none", color:"black"}}>Login</Link></MenuItem>
                  <MenuItem><Link to="Register" style={{textDecoration:"none", color:"black"}}>Register</Link></MenuItem>
                  <MenuItem><Link to="MyWishlist" style={{textDecoration:"none", color:"black"}}><Badge badgeContent={3} color="error"> Wishlist </Badge></Link></MenuItem>

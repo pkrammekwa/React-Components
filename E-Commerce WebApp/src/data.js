@@ -3,21 +3,21 @@ export const SilderItems = [
     id: 1,
     img: "Slider Images/solar.jpg",
     title: "Winter Sale!!",
-    desc: "adsad asd asd sa da das das dasa d ad asd asd asd asd as das das das d",
+    desc: "Super solar best deals now on!",
     bg: "ffffff",
 },
 {
     id: 2,
     img: "Slider Images/samsung.png",
     title: "Summer Sale!!",
-    desc: "ugiodfugvugiobdriobvudio dfio ugvifobvudiog dfgvdfiugviodfuo",
+    desc: "Get the exclusive next generation phone!",
     bg: "ffffff",
 },
 {
     id: 3,
     img: "Slider Images/charger.jpg",
     title: "Monate Sale!!",
-    desc: "bvcmnknfkbndf dk bndkn bdkbndb ndklbdkbnbfn dnlbndfbndfkjbdfjbhdfjkbhdfkjbhdfkjbnnbmcnvcmbnkndbdjbhdfkjghf fjdkhg jh gjdfhjgdhkjghdk",
+    desc: "Get the best discounts ever!",
     bg: "ffffff",
 }]
 
@@ -29,12 +29,12 @@ export const Category = [
 },
 {
     id: 2,
-    img: "Slider Images/store.jpg",
+    img: "Slider Images/nathaniel-yeo-unsplash.jpg",
     title: "T-Shirts"
 },
 {
     id: 3,
-    img: "Slider Images/good-faces-unsplash.jpg",
+    img: "Slider Images/jozsef-unsplash.jpg",
     title: "Glasses"
 }]
 

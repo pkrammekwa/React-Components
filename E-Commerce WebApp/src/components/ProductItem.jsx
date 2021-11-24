@@ -68,7 +68,7 @@ const Name = styled.p`
    font-size: 17px;
    display: flex;
    font-weight: 500;
-   width: 75%;
+   width: 85%;
    ${mobile({width:"68%"})}
 `;
 const Rating = styled.h3`
@@ -83,7 +83,7 @@ const Price = styled.h3`
     font-style: italic;
 `;
 const Details = styled.div`
-   width: 75%;
+   width: 85%;
    display: flex;
    justify-content: space-between;
    margin: 0px;

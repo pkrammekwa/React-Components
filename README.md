@@ -19,7 +19,7 @@ You can add any component on your existing project without them interferring wit
 Most importantly, this template is responsive.\
 Note: This template does not use bootstrap. It is independent of bootstrap. 
 
-### Setup
+### `Setup`
 run npm install in cmd/VS Code/etc
 
 ### `npm start`
