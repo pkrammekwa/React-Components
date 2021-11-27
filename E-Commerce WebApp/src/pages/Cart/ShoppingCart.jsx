@@ -27,13 +27,14 @@ ${mobile({display:"none"})}
 `;
 const TopText = styled.span`
     margin: 0px 10px;
+
     text-decoration: underline;
 `;
 
 const TopButton = styled.button`
     padding: 10px 40px;
     cursor: pointer;
-    
+    flex: 1;   
     border: 1px solid #ddd;
     color: ${(props) => props.type === "filled" && "white"};
     background-color: ${(props) => props.type === "filled" ? "black" : "transparent"};

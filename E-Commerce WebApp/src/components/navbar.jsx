@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 =================================================================================
 */
 const Container = styled.div`
-    height: 60px;
+    height: 50px;
     border-bottom: 1px solid #ddd;
 
 `
@@ -25,6 +25,7 @@ const Wrapper = styled.div`
     width: 100%;
     -webkit-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.3);
+    height: 30px;
 `;
 const Left = styled.div`
     flex: 1;
@@ -36,7 +37,7 @@ const Logo = styled.h3`
     font-Weight: bold;
 `;
 const Right = styled.div`
-    flex: 1;
+    flex: 2;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -113,25 +114,25 @@ const Navbar = () => {
              </Center>
              <Right >
                      
-                 <MenuItem><Link to="MyProfile" style={{textDecoration:"none", color:"black"}}>My Profile</Link></MenuItem>
-                 <MenuItem><Link to="Login" style={{textDecoration:"none", color:"black"}}>Login</Link></MenuItem>
-                 <MenuItem><Link to="Register" style={{textDecoration:"none", color:"black"}}>Register</Link></MenuItem>
-                 <MenuItem><Link to="MyWishlist" style={{textDecoration:"none", color:"black"}}><Badge badgeContent={3} color="error"> Wishlist </Badge></Link></MenuItem>
-                 <MenuItem><Link to="ShoppingCart" style={{textDecoration:"none", color:"black"}}> <Badge badgeContent={5} color="primary"> <ShoppingCartOutlined/> </Badge> </Link></MenuItem>
+                 <MenuItem><Link to="../Admin/Dashboard" style={{textDecoration:"none", color:"black"}}>Dashboard</Link></MenuItem>
+                 <MenuItem><Link to="../MyProfile" style={{textDecoration:"none", color:"black"}}>My Profile</Link></MenuItem>
+                 <MenuItem><Link to="../Login" style={{textDecoration:"none", color:"black"}}>Login</Link></MenuItem>
+                 <MenuItem><Link to="../Register" style={{textDecoration:"none", color:"black"}}>Register</Link></MenuItem>
+                 <MenuItem><Link to="../MyWishlist" style={{textDecoration:"none", color:"black"}}><Badge badgeContent={3} color="error"> Wishlist </Badge></Link></MenuItem>
+                 <MenuItem><Link to="../ShoppingCart" style={{textDecoration:"none", color:"black"}}> <Badge badgeContent={5} color="primary"> <ShoppingCartOutlined/> </Badge> </Link></MenuItem>
                 <MobileNav> <Menu onClick={() => OpenMobileMenu()}/></MobileNav> 
              </Right>
-             <Modal 
-                open={open}
-                onClose={() =>handleClose()}
-             >
+             <Modal open={open}onClose={() =>handleClose()}>
                  <MobileMenu>
                     <MobileMenuList>
                         <center>
-                            <MobileMenuListItem><Link to="Login" style={{textDecoration:"none", color:"white"}}>Login</Link></MobileMenuListItem>
-                            <MobileMenuListItem><Link to="Register" style={{textDecoration:"none", color:"white"}}>Register</Link></MobileMenuListItem>
-                            <MobileMenuListItem><Link to="MyWishlist" style={{textDecoration:"none", color:"white"}}><Badge badgeContent={3} color="error"> Wishlist </Badge></Link></MobileMenuListItem>
-                            <MobileMenuListItem><Link to="ShoppingCart" style={{textDecoration:"none", color:"white"}}> <Badge badgeContent={5} color="primary"> <ShoppingCartOutlined/> </Badge> </Link></MobileMenuListItem>
-                    </center>
+                            <MobileMenuListItem><Link to="../Admin/Dashboard" style={{textDecoration:"none", color:"white"}}>Dashboard</Link></MobileMenuListItem>
+                            <MobileMenuListItem><Link to="../MyProfile" style={{textDecoration:"none", color:"white"}}>My Profile</Link></MobileMenuListItem>
+                            <MobileMenuListItem><Link to="../Login" style={{textDecoration:"none", color:"white"}}>Login</Link></MobileMenuListItem>
+                            <MobileMenuListItem><Link to="../Register" style={{textDecoration:"none", color:"white"}}>Register</Link></MobileMenuListItem>
+                            <MobileMenuListItem><Link to="../MyWishlist" style={{textDecoration:"none", color:"white"}}><Badge badgeContent={3} color="error"> Wishlist </Badge></Link></MobileMenuListItem>
+                            <MobileMenuListItem><Link to="../ShoppingCart" style={{textDecoration:"none", color:"white"}}> <Badge badgeContent={5} color="primary"> <ShoppingCartOutlined/> </Badge> </Link></MobileMenuListItem>
+                        </center>
                     </MobileMenuList>
                  </MobileMenu>
              </Modal>

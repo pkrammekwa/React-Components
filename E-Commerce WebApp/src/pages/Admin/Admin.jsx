@@ -1,10 +1,15 @@
 import React from 'react'
 
+const Container = styled.div`
+
+`;
+
+
 const Admin = () => {
     return (
-        <div>
+        <Container>
             
-        </div>
+        </Container>
     )
 }
 

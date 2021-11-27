@@ -11,6 +11,10 @@ import Wishlist from './pages/Cart/Wishlist';
 import Profile from './pages/Account/Profile';
 import AddProduct from './pages/Products/AddProduct';
 import EditProduct from './pages/Products/EditProduct';
+import Dashboard from './pages/Admin/Dashboard';
+import AddImageSlide from './pages/Admin/ImageSlider/AddImageSlide';
+import EditImageSlide from './pages/Admin/ImageSlider/EditImageSlide';
+import SlideList from './pages/Admin/ImageSlider/SlideList';
 
 function App() {
   return (
@@ -47,10 +51,21 @@ function App() {
           <Route path="/Product/EditProduct">
               <EditProduct/>
           </Route>
+          <Route path="/Admin/Dashboard">
+              <Dashboard/>
+          </Route>
+          <Route path="/Admin/AddSlide">
+              <AddImageSlide/>
+          </Route>
+          <Route path="/Admin/EditSlide">
+              <EditImageSlide/>
+          </Route>
+          <Route path="/Admin/SlideList">
+              <SlideList/>
+          </Route>
         </Switch>
       </Router>
-        
-      
+
     </div>
   );
 }

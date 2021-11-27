@@ -20,7 +20,7 @@ const Wrapper = styled.div`
     padding: 20px;
     background-color: white;
     border: 1px solid #ddd;
-    ${mobile({width: "80%"})}
+    ${mobile({width: "90%", padding:"5px"})}
 `;
 const Button = styled.button`
     background: black;
@@ -37,11 +37,12 @@ const Button = styled.button`
 `;
 const Input = styled.input`
     flex:1;
-    min-width: 40%;
+    min-width: 50%;
     margin: 20px 10px 0px 0px;
     padding: 7px;
     background: none;
     border: 1px solid #ddd;
+    
 `;
 const Title = styled.h1`
     font-size: 24px;

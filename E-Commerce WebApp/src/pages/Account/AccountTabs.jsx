@@ -17,17 +17,17 @@ const Container = styled.div`
     min-height: 400px;
     background-color: white;
     margin: 0.5rem auto 1.5rem;
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     color: black;
     border-radius: 2rem;
-    ${mobile({margin:"1rem auto 0rem", width: "100%", padding:"0rem"})}
+    ${mobile({margin:"-1rem", marginTop:"20px", width: "100%", padding:"0rem"})}
 `;
 const Tabs = styled.ul`
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 auto 2rem;
+    margin: 0 auto 1rem;
     border-right: ${(props) => props.border};
     ${mobile({width:"90%"})}
 `;
@@ -49,8 +49,12 @@ const TabItem = styled.li`
         background: black;
         color: white;
     }  
+    ${mobile({fontSize:"11px"})}
 `;
-const Outline = styled.div``;
+const Outline = styled.div`
+    margin-left: 15px;
+    width: 100%;
+`;
 /*
 =================================================================================
                             Your Code Goes here
@@ -74,11 +78,13 @@ export const AccountTabs = () => {
             </Tabs>
           
             <Outline>
+                <center>
                 {ActiveTab === "tab1" ? <ProfileView/> : (
                     ActiveTab === "tab2" ? <PurchaseHistory/> : (
                         ActiveTab === "tab3" ? <UpdateProfile/> : <ResetPassword/>
                     )
                 )} 
+                </center>
             </Outline>
         </Container>
     )

@@ -13,7 +13,7 @@ const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: space-between;
-    ${mobile({flexDirection:"column", margin:"0px 0px 0px 30px"})};
+    ${mobile({flexDirection:"column"})};
 `;
 //Short perfonal info
 const ShortPI = styled.div`
@@ -57,6 +57,7 @@ const StatsInfoTextWhite = styled.p`
 `;
 const Text = styled.div`
     flex: 5;
+    text-align:start;
 `;
 const Number = styled.div`
     flex: 1;

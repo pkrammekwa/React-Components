@@ -45,7 +45,7 @@ const ImageContainer = styled.div`
 `;
 const Image = styled.img`
     height: 80%;
-    ${mobile({height:"60%", width:"70%", marginLeft:"40px", marginTop:"10px"})}
+    ${mobile({height:"50%", width:"70%", marginLeft:"40px", marginTop:"10px"})}
 `; 
 
 const InfoContainer = styled.div`
@@ -63,7 +63,7 @@ const Description = styled.p`
     font-size: 25px;
     font-style: italic;
     font-weight: 100;
-    ${mobile({ margin:"0px 0px", display:"none"})}
+    ${mobile({ margin:"0px 0px", textAlign:"center"})}
 `;
 const InfoButton = styled.button`
     background: transparent;

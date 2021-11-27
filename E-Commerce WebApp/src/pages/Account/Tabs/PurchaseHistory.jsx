@@ -6,9 +6,8 @@ const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 15%;
     width: 70%;
-    ${mobile({width:"95%",marginLeft:"15px"})}
+    ${mobile({width:"95%", margin:"0"})}
 `;
 const Summary = styled.div`
     flex: 1;
@@ -37,7 +36,8 @@ const SummaryItem = styled.div`
 `;
 const SummaryText = styled.span`
     flex: 4;
-    ${mobile({flex:"5"})}
+    text-align:start;
+    ${mobile({flex:"5", fontSize:"16px"})}
 `;
 const SummaryQuantity = styled.span`
     flex: 3;
@@ -46,7 +46,7 @@ const SummaryQuantity = styled.span`
 const SummaryPrice = styled.span`
     flex:1;
     text-align:end;
-    ${mobile({flex:"2"})}
+    ${mobile({flex:"3"})}
 `;
 const PaymentOutcome = styled.div`
     background: ${(props) => props.outcome === "success" && "limegreen"};
@@ -58,14 +58,15 @@ const PaymentOutcome = styled.div`
 const SummaryKey = styled.div`
     display:flex;
     justify-content: center;
-    align-items: space-between;
-    
+    align-items: center;
+    width:50%;
+    ${mobile({width:"80%"})}
 `;
 const SummarySubTitle= styled.span`
     text-align: center;
-    margin-left: 10px;
     display: flex;
-
+    flex:1;
+    ${mobile({fontSize:"14px", marginLeft:"10px"})}
 `;
 
 
@@ -76,7 +77,7 @@ const PurchaseHistory = () => {
              <Summary>
                 <SummaryTitle>Items Bought</SummaryTitle>
                 <SummaryKey>
-                  <SummarySubTitle>Payment Successful: <PaymentOutcome outcome="success"/></SummarySubTitle>
+                  <SummarySubTitle>Payment Success: <PaymentOutcome outcome="success"/></SummarySubTitle>
                   <SummarySubTitle>Payment Failed: <PaymentOutcome outcome="failed"/></SummarySubTitle>
                 </SummaryKey>
                 <SummaryItem onClick={()=> alert("display full info using modal")}>

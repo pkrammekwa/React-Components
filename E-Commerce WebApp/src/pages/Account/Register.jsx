@@ -22,7 +22,7 @@ const Wrapper = styled.div`
     padding: 20px;
     background-color: white;
     border: 1px solid #ddd;
-    ${mobile({width: "80%"})};
+    ${mobile({width: "95%", padding:"5px"})};
 `;
 const Button = styled.button`
     background: black;

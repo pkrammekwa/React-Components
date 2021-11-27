@@ -60,7 +60,7 @@ const CategoryItem = ({item}) => {
             <Image src={item.img}/>
             <Info>
                 <Title>{item.title}</Title>
-                <Button href="http://localhost:3000/Shop">Shop Now</Button>
+                <Button href="../Shop">Shop Now</Button>
             </Info>
         </Container>
     )

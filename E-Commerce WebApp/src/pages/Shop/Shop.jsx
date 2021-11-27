@@ -5,13 +5,12 @@ import styled from 'styled-components';
 import Products from '../../components/Products';
 import Footer from '../../components/Footer';
 import { mobile } from '../../components/Responsive';
-import {ShoppingBasketOutlined} from '@material-ui/icons';
 
 const FilterContainer = styled.div`
     display: flex;
     justify-content: space-between;
     margin: 20px;
-    ${mobile({flexDirection:"column", margin: "0px 10px"})};
+    ${mobile({flexDirection:"column", margin: "20px"})};
 `;
 const Title = styled.h2`
     text-align: center;
@@ -19,7 +18,7 @@ const Title = styled.h2`
 const Filter = styled.div`
     margin: 20px;
     
-    ${mobile({flexDirection:"column", margin: "0px 80px", width:"30px"})};
+    ${mobile({flexDirection:"column", margin:"0", width:"30px"})};
 `;
 const FilterText = styled.span`
     font-weight: 600;
@@ -38,11 +37,11 @@ const Select = styled.select`
 const Option = styled.option`
     background-color: white;
     
-    ${mobile({width: "200px"})};
+    ${mobile({width: "330px"})};
 `;
 
 const Search = styled.div`
-    ${mobile({width:"90%"})}
+    ${mobile({width:"330px"})}
 
 `;
 
@@ -55,7 +54,7 @@ border: 1px solid #ddd;
 border-radius: 5px;
 margin-left: 20px;
 width: 300px;
-${mobile({flexDirection:"column", margin:"0px 5px", width: "225px"})};
+${mobile({flexDirection:"column", margin:"0px 5px", width: "355px"})};
 `;
 
 const Pagination = styled.div`
@@ -68,8 +67,10 @@ const Shop = () => {
         <div>
             <Navbar/>
             <Announcements/>
-                <Title><ShoppingBasketOutlined/>Shop</Title>
+                <Title>Shop</Title>
+                <center>
                 <FilterContainer>
+                    
                     <Filter>
                         <FilterText>Filter: </FilterText>
                         <Select>
@@ -89,7 +90,7 @@ const Shop = () => {
                             <Option > Espadas</Option>
                         </Select>
                     </Filter>
-
+                    
                     <Filter>
                         <FilterText>Search</FilterText>
                             
@@ -106,8 +107,9 @@ const Shop = () => {
                             
                         </Select>
                     </Filter>
+                  
                 </FilterContainer>
-
+               </center>
                 <Products/>
 
                 <center>
